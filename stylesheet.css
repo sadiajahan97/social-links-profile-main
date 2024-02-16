@@ -1,0 +1,121 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* Primary Color Variable */
+
+  --GREEN: hsl(75, 94%, 57%);
+
+  /* Neutral Color Variables */
+
+  --WHITE: hsl(0, 0%, 100%);
+  --GREY: hsl(0, 0%, 20%);
+  --DARK_GREY: hsl(0, 0%, 12%);
+  --OFF_BLACK: hsl(0, 0%, 8%);
+}
+
+/* Page Styles */
+
+body {
+  display: grid;
+  place-content: center;
+  grid-template-columns: minmax(auto, 375px);
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  min-height: 100vh;
+  color: var(--WHITE);
+  background-color: var(--OFF_BLACK);
+}
+
+.body {
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: var(--DARK_GREY);
+}
+
+main {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Header Styles */
+
+img {
+  margin-bottom: 3rem;
+  border-radius: 88px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--GREEN);
+}
+
+header p {
+  font-weight: normal;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Link Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main a {
+  display: block;
+  text-decoration: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
+  color: var(--WHITE);
+  background-color: var(--GREY);
+}
+
+main a:visited {
+  color: var(--WHITE);
+  background-color: var(--GREY);
+}
+
+main a:hover, main a:focus {
+  color: var(--OFF_BLACK);
+  background-color: var(--GREEN);
+}
+
+/* Footer Styles */
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-columns: minmax(auto, 1440px);
+  }
+}
